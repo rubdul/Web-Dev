@@ -1,0 +1,14 @@
+/* Change color-title classes to have a a font weight normal */
+.color-tile{font-weight: normal;}
+
+/* Match color Ids  to their expected hue */
+#red{color:red}
+#blue{color: blue;}
+#yellow{color:yellow}
+#orange{color: orange;}
+#green{color: green;}
+
+
+
+/* make images 200 px height and width 200px */
+img{height: 200px; width: 200px;}

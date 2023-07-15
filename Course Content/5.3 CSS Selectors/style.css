@@ -1,0 +1,22 @@
+ol {
+  margin-left: -40px;
+  margin-top: -20px;
+  list-style-position: inside;
+}
+
+/* Write your CSS below, don't change the rules above. */
+
+/* Change paragraph elements to all red */
+p{color: red;}
+
+/* Set note class elements font size to 20 px*/
+.note{font-size: 20px;}
+
+/* Set the id of id-selector-demo to color of green*/
+#id-selector-demo{color:green}
+
+/* Make list elements with a value=4 attribute have a text color of blue */
+li[value="4"]{color:blue}
+
+/* Wildcard all elements to have a center text alignment */
+*{text-align: center;}
