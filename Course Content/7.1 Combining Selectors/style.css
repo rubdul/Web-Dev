@@ -1,0 +1,16 @@
+/* Write your code here: */
+h1, h2{
+    color: blueviolet;
+}
+
+.box > .done{
+    color: firebrick;
+}
+
+div ul{
+    color: blue;
+}
+
+li.done{
+    color: seagreen;
+}

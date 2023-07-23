@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Cascade</title>
+  <link rel="stylesheet" href="./style.css">
+
+
+  <style>
+    
+    /* 10 pixel padding inside each div */
+    div{
+      padding: 10px;
+
+    }
+
+    /* 10 */
+    #outer-box{
+      border: 10px solid purple;
+
+    }
+
+    /* white-text is white */
+    .white-text{
+      color: white;
+    }
+
+    /* inner-box has a red background */
+    .inner-box{
+      background-color: red;
+    }
+
+
+
+
+
+  </style>
+</head>
+
+<body>
+  <div id="outer-box" class="box">
+    <div class="box">
+      <p>Yellow Text</p>
+      <div class="box inner-box">
+        <p class="white-text">White Text</p>
+      </div>
+    </div>
+    <div class="box">
+      <p>Yellow Text</p>
+      <div class="box inner-box">
+        <p class="white-text">White Text</p>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
