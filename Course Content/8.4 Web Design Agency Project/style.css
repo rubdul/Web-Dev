@@ -19,3 +19,69 @@ footer {
   color: midnightblue;
 }
 
+
+
+
+
+
+
+
+
+    /* Now size the website for below 600px */
+
+    @media (max-width:650px) {
+
+      /* change the font size of the title */
+      .main>h1{
+        width: 100%;
+        text-align: center;
+        font-size: 28px;
+      }
+
+      /* Resize images to complete */
+      .card img{
+        height: 200px;
+        width: 100%;
+      }
+      .card{
+
+      }
+
+      
+    }
+    
+/* media query for a normal size above 650px */
+
+  @media (min-width:650px) {
+    
+    /* make the text divs inline block */
+    .left.card{
+      /* display: inline-block; */
+      float: left;
+      width: 40%;
+    }
+    .right.card{
+      /* display: inline-block; */
+      float: right;
+      width: 40%;
+      margin-left: 20px;
+    }
+
+    /* make images float left */
+    .card img{
+      float: left;
+      height:200px;
+      margin-right: 20px;
+    }
+
+    /* resize the margins for h2 elements */
+    h2{
+      margin:0px;
+    }
+    
+    /* make the  website title take up half of the screen*/
+    .main>h1{
+      width: 60%;
+    }
+
+}
