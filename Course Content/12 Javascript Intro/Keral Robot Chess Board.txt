@@ -1,0 +1,66 @@
+/**
+ * Welcome to the Stanford Karel IDE.
+ * This is a free space for you to 
+ * write any Karel program you want.
+ **/
+function main(){
+   //your code here
+   oddRow();
+   upRight();
+   evenRow();
+   upLeft();
+   oddRow();
+   upRight();
+   evenRow();
+   upLeft();
+   oddRow();
+ 
+}
+
+
+function diagonalMove(){
+   
+   //Function that moves keral diagonally one space
+   move();
+   turnLeft();
+   move();
+   turnRight();
+   }
+
+
+function oddRow(){
+   //First, third, and fifth row of the chessboard
+   putBeeper();
+   move();
+   move();
+   putBeeper();
+   move();
+   move();
+   putBeeper();
+   }
+   
+   
+function evenRow(){
+   //second and fourth row of the board.
+   move();
+   putBeeper();
+   move();
+   move();
+   putBeeper();
+   move();   
+   }
+   
+function upRight(){
+   //Move up and reorient from the right side of the board
+   turnLeft();
+   move();
+   turnLeft();
+   }
+   
+   
+function upLeft(){
+   //Move up and reorient from the left side
+   turnRight();
+   move();
+   turnRight();
+   }
