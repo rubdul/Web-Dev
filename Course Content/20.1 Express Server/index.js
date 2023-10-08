@@ -22,12 +22,17 @@ app.get("/",(req, res)=>{
 
 // Use a different endpoint
 app.get("/about", (req, res) => {
-  res.send("<h1> About Me </h1>");
+  res.send("<h1> About Me and youff </h1>");
+});
+
+// Moving on to the lesson on HTTP requests let's test server response codes using postman
+app.put("/register", (req,res) => {
+  res.sendStatus(201);
 });
 
 app.get("/Contact", (req,res) => {
   res.send( "<h1>If found please call 555-555-5555</h1>" )
-})
+});
 
 // Activate the server listener
 app.listen(3000, () => {
