@@ -29,7 +29,7 @@ app.post("/check", (req,res)=>{
     
     //check if the password works and send a page for success or failure
     if(password == correctPassword){
-        res.sendFile(__dirname + "/public/secret.html")
+        res.sendFile(__dirname + "/public/secret.html") // res.sendFile method only works for static HTML objects
     }
     else{
         res.send('<h1>Incorrect Password please try again</h1>');
