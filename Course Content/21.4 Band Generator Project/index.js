@@ -11,11 +11,15 @@ const port = 3000;
 
 //Step 4 - Add a dynamic year to the footer.
 //Hint: Google to find out how to get the current year using JS.
+var Year = new Date().getFullYear();
+
 
 app.use(bodyParser.urlencoded({ extended: true }));
+app.use(express.static("public"));
 
 app.get("/", (req, res) => {
   //Step 1 - Make the get route work and render the index.ejs file.
+  res.render("index.ejs", {year:Year})
 });
 
 app.post("/submit", (req, res) => {
@@ -24,12 +28,24 @@ app.post("/submit", (req, res) => {
   //Then:
   //1. You should randomly pick an adjective from the const "adj" and a noun from const "noun",
   //scroll down to see the two arrays.
+  var randAdj = adj[(Math.floor(Math.random() * adj.length))];
+  var randNoun = noun[(Math.floor(Math.random() * noun.length))];
+  console.log(randAdj);
+  console.log(randNoun);
+
   //2. Send the index.ejs as a response and add the adjective and noun to the res.render
+  res.render('index.ejs',
+  {bandAdj: randAdj, bandNoun: randNoun, year:Year}
+  )
+
+ 
   //3. Test to make sure that the random words display in the h1 element in index.ejs
+
 });
 
 app.listen(port, () => {
   console.log(`Listening on port ${port}`);
+  console.log(Year)
 });
 
 const adj = [
